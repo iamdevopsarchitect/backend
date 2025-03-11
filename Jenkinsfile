@@ -31,7 +31,7 @@ pipeline {
             
             steps {
                     sh """
-                    docker build -t iamdevopsarchitect:${appVersion}
+                    docker build -t iamdevopsarchitect:${appVersion} .
                     docker images
                     """
                     
